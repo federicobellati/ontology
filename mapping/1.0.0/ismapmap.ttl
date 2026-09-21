@@ -100,3 +100,25 @@ ismapmap:sosa
     rdfs:label "SOSA/SSN crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in SOSA/SSN."@en ;
     ismapmap:targetProfile <http://www.w3.org/ns/sosa/> .
+	
+#################################################################
+# Climate Forecast CONVENTION
+#################################################################
+
+ismapmap:cf
+    a rdf:Property ;
+    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:label "CF Conventions crosswalk"@en ;
+    rdfs:comment "Maps an ISMAP property to the corresponding field, attribute or concept defined by the CF Conventions."@en ;
+    ismapmap:targetProfile <https://cfconventions.org/Data/cf-conventions/cf-conventions-1.13/cf-conventions.html> .
+
+#################################################################
+# Attribute Convention for Data Discovery
+#################################################################
+
+ismapmap:acdd
+    a rdf:Property ;
+    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:label "ACDD crosswalk"@en ;
+    rdfs:comment "Maps an ISMAP property to the corresponding global attribute defined by the Attribute Convention for Data Discovery."@en ;
+    ismapmap:targetProfile <https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3> .
