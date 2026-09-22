@@ -19,7 +19,7 @@ ismapmap:targetProfile
 
 ismapmap:dcatap
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "DCAT-AP crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in DCAT-AP."@en ;
     ismapmap:targetProfile <http://data.europa.eu/r5r/> .
@@ -30,7 +30,7 @@ ismapmap:dcatap
 
 ismapmap:iso19115
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "ISO 19115 crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in ISO 19115."@en ;
     ismapmap:targetProfile <https://standards.isotc211.org/19115/-1/> .
@@ -41,7 +41,7 @@ ismapmap:iso19115
 
 ismapmap:datacite
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "DataCite crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in the DataCite Metadata Schema."@en ;
     ismapmap:targetProfile <https://schema.datacite.org/meta/kernel-4.7/> .
@@ -52,7 +52,7 @@ ismapmap:datacite
 
 ismapmap:dublincore
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "Dublin Core crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in Dublin Core Terms."@en ;
     ismapmap:targetProfile <http://purl.org/dc/terms/> .
@@ -63,7 +63,7 @@ ismapmap:dublincore
 
 ismapmap:inspire
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "INSPIRE crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in the INSPIRE Metadata Regulation and Technical Guidelines."@en ;
     ismapmap:targetProfile <https://inspire.ec.europa.eu/> .
@@ -74,7 +74,7 @@ ismapmap:inspire
 
 ismapmap:schemaorg
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "Schema.org crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in Schema.org."@en ;
     ismapmap:targetProfile <https://schema.org/> .
@@ -85,7 +85,7 @@ ismapmap:schemaorg
 
 ismapmap:provo
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "PROV-O crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in the W3C Provenance Ontology."@en ;
     ismapmap:targetProfile <http://www.w3.org/ns/prov#> .
@@ -96,7 +96,7 @@ ismapmap:provo
 
 ismapmap:sosa
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "SOSA/SSN crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to its preferred equivalent in SOSA/SSN."@en ;
     ismapmap:targetProfile <http://www.w3.org/ns/sosa/> .
@@ -107,7 +107,7 @@ ismapmap:sosa
 
 ismapmap:cf
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "CF Conventions crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to the corresponding field, attribute or concept defined by the CF Conventions."@en ;
     ismapmap:targetProfile <https://cfconventions.org/Data/cf-conventions/cf-conventions-1.13/cf-conventions.html> .
@@ -118,7 +118,7 @@ ismapmap:cf
 
 ismapmap:acdd
     a rdf:Property ;
-    rdfs:subPropertyOf skos:exactMatch ;
+    rdfs:subPropertyOf skos:closeMatch ;
     rdfs:label "ACDD crosswalk"@en ;
     rdfs:comment "Maps an ISMAP property to the corresponding global attribute defined by the Attribute Convention for Data Discovery."@en ;
     ismapmap:targetProfile <https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3> .
