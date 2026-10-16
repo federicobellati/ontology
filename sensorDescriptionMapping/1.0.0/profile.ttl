@@ -27,8 +27,9 @@
 orcid:0009-0000-9657-919X a foaf:Person ;
     foaf:name "Federico Bellati" .
 
-# Property-level crosswalk: each rdfs:comment assertion also entails a schema:description assertion.
+# Property-level crosswalk: each rdfs:comment assertion also entails schema:description and dcterms:description assertions.
 rdfs:comment rdfs:subPropertyOf schema:description .
+rdfs:comment rdfs:subPropertyOf dcterms:description .
 
 # Property-level crosswalk: each dcterms:title assertion also entails an rdfs:label assertion.
 dcterms:title rdfs:subPropertyOf rdfs:label .
