@@ -2,6 +2,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix orcid:   <https://orcid.org/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema:  <http://schema.org/> .
 
@@ -33,3 +34,6 @@ rdfs:comment rdfs:subPropertyOf dcterms:description .
 
 # Property-level crosswalk: each dcterms:title assertion also entails an rdfs:label assertion.
 dcterms:title rdfs:subPropertyOf rdfs:label .
+
+# Each creator is also an attributed agent.
+dcterms:creator rdfs:subPropertyOf prov:wasAttributedTo .
