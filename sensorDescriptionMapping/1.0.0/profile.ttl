@@ -36,4 +36,15 @@ rdfs:comment rdfs:subPropertyOf dcterms:description .
 dcterms:title rdfs:subPropertyOf rdfs:label .
 
 # Each creator is also an attributed agent.
+# Example in a profile using this mapping:
+#   dcterms:creator orcid:0009-0000-9657-919X ;
+#   prov:wasAttributedTo orcid:0009-0000-9657-919X .
+# The subPropertyOf axiom entails the prov:wasAttributedTo assertion.
+# A profile may also state this qualified attribution explicitly:
+#   prov:qualifiedAttribution [
+#       a prov:Attribution ;
+#       prov:agent orcid:0009-0000-9657-919X ;
+#       prov:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/author>
+#   ] .
+# The qualified attribution is not entailed by the subPropertyOf axiom.
 dcterms:creator rdfs:subPropertyOf prov:wasAttributedTo .
