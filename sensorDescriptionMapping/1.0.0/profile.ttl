@@ -5,7 +5,7 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema:  <http://schema.org/> .
 
-@base <https://w3id.org/cnr-ismar/ontology/main/sensorDescriptionMapping/1.0.0/> .
+@base <https://w3id.org/cnr-ismar/ontology/sensorDescriptionMapping/1.0.0/> .
 
 <> a owl:Ontology ;
     rdfs:comment """
