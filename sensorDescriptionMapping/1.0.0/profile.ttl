@@ -1,4 +1,18 @@
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix orcid:   <https://orcid.org/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+
+@base <https://raw.githubusercontent.com/federicobellati/ontology/main/sensorDescriptionMapping/1.0.0/profile.ttl> .
+
+<> a owl:Ontology ;
+    owl:versionInfo "1.0.0" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:creator orcid:0009-0000-9657-919X .
+
+orcid:0009-0000-9657-919X a foaf:Person ;
+    foaf:name "Federico Bellati" .
 
 rdfs:comment rdfs:subPropertyOf schema:description .
