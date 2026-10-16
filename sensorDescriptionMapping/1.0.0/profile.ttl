@@ -8,6 +8,18 @@
 @base <https://raw.githubusercontent.com/federicobellati/ontology/main/sensorDescriptionMapping/1.0.0/profile.ttl> .
 
 <> a owl:Ontology ;
+    rdfs:comment """
+        This ontology defines lightweight crosswalks for terms used to describe
+        sensor models in SOSA/SSN-based profiles. Created by F. B. (Federico
+        Bellati), it aligns descriptive properties in sensor profiles with
+        corresponding terms in other vocabularies and metadata standards. These
+        mappings are intended to help FAIR checkers recognize and interpret
+        equivalent descriptive metadata across INSPIRE, ISO 19115, DataCite,
+        DCAT, DCAT-AP, the Attribute Convention for Data Discovery (ACDD), and
+        the CF Conventions. Load this ontology together with a sensor profile
+        so that its mapping axioms can support discovery and validation of
+        equivalent description terms.
+    """@en ;
     owl:versionInfo "1.0.0" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:creator orcid:0009-0000-9657-919X .
@@ -15,4 +27,5 @@
 orcid:0009-0000-9657-919X a foaf:Person ;
     foaf:name "Federico Bellati" .
 
+# Property-level crosswalk: each rdfs:comment assertion also entails a schema:description assertion.
 rdfs:comment rdfs:subPropertyOf schema:description .
